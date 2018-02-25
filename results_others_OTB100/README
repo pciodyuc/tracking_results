@@ -1,0 +1,22 @@
+<<1. Sequence List>>
+"seq_list_50.txt" is sequence list of the benchmark[1].
+"seq_list_100.txt" is sequence list of the entire dataset[2].
+
+
+<<2. Format of File Name>>
+Each file name has the from "{{sequence_name}}_CNN-SVM.mat"
+
+
+<<3. Format of Result File>>
+3-1. Result files has compatible format with tracker benchmark code, which can be downloaded at [2].
+
+3-2. Each "{{seqence_name}}_DSMT.mat" file has a single cell "results"
+"results{1}" has three variables
+    1. res - a single matrix which rows are bounding box coordinates(Left, Upper, Width, Height) and 1-based indexing.
+    2. len - length of tracking result
+    3. type - type of res ('rect')
+
+
+<<4. References & Links>>
+[1] Yi Wu, Jongwoo Lim and Ming-Hsuan Yang. Online Object Tracking: A Benchmark. in CVPR, 2013
+[2] Visual Tracker Benchmark Dataset, http://cvlab.hanyang.ac.kr/tracker_benchmark/datasets.html
